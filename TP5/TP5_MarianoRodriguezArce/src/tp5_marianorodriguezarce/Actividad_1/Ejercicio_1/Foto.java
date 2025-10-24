@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tp5_marianorodriguezarce.Actividad_1.Ejercicio_1;
+
+/**
+ *
+ * @author nanos
+ */
+public class Foto {
+    private byte[] imagen;
+    private String formato;
+
+    public Foto(byte[] imagen, String formato) {
+        this.imagen = imagen;
+        this.formato = formato;
+    }
+
+    public byte[] getImagen() {
+        return imagen;
+    }
+
+    public String getFormato() {
+        return formato;
+    }
+
+    @Override
+    public String toString() {
+        return "Foto{" + formato + ", bytes=" + (imagen == null ? 0 : imagen.length) + '}';
+    }
+}
